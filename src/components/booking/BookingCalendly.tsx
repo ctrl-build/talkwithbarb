@@ -131,11 +131,12 @@ export default function BookingCalendly() {
                 </div>
 
                 <div
-                  className="relative rounded-2xl overflow-hidden transition-all duration-300 bg-white"
+                  className="relative rounded-2xl overflow-hidden transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-[#c99ccf] focus-within:ring-opacity-50"
                   style={{
                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
                     borderRadius: '12px',
                     border: '1px solid rgba(201,156,207,0.1)',
+                    outline: 'none',
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-4px)';
@@ -192,11 +193,12 @@ export default function BookingCalendly() {
                 </div>
 
                 <div
-                  className="relative rounded-2xl overflow-hidden transition-all duration-300 bg-white"
+                  className="relative rounded-2xl overflow-hidden transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-[#c99ccf] focus-within:ring-opacity-50"
                   style={{
                     boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
                     borderRadius: '12px',
                     border: '1px solid rgba(201,156,207,0.1)',
+                    outline: 'none',
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-4px)';

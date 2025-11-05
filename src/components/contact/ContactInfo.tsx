@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { InstagramLogo, LinkedinLogo, YoutubeLogo, Envelope } from 'phosphor-react';
+import { InstagramLogo, TiktokLogo, YoutubeLogo, Envelope } from 'phosphor-react';
 
 export default function ContactInfo() {
   const [windowWidth, setWindowWidth] = useState(1200);
@@ -96,7 +96,7 @@ export default function ContactInfo() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-200"
@@ -113,7 +113,7 @@ export default function ContactInfo() {
                   e.currentTarget.style.color = '#2B2B2B';
                 }}
               >
-                <LinkedinLogo size={24} weight="regular" />
+                <TiktokLogo size={24} weight="regular" />
               </a>
 
               <a
