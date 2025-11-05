@@ -188,6 +188,20 @@ body {
   background-clip: text;
 }
 
+@keyframes checkmarkDraw {
+  0% {
+    stroke-dasharray: 0 100;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 100 0;
+    opacity: 1;
+  }
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0) translateX(0);
