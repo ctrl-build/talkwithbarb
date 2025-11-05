@@ -125,6 +125,7 @@ export default function ServicesOverview() {
                   transitionDelay: `${0.1 + index * 0.1}s`,
                   transitionTimingFunction: 'cubic-bezier(0.77, 0, 0.175, 1)',
                   cursor: 'pointer',
+                  border: '1px solid transparent',
                 }}
                 onMouseEnter={(e) => {
                   if (windowWidth >= 768) {
@@ -137,7 +138,7 @@ export default function ServicesOverview() {
                   if (windowWidth >= 768) {
                     e.currentTarget.style.transform = 'translateY(0) scale(1)';
                     e.currentTarget.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.06)';
-                    e.currentTarget.style.border = 'none';
+                    e.currentTarget.style.border = '1px solid transparent';
                   }
                 }}
                 onTouchStart={(e) => {

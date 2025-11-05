@@ -83,6 +83,7 @@ export default function CoursesOverview() {
                 transitionDuration: '0.4s',
                 transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                 cursor: 'pointer',
+                border: '2px solid transparent',
               }}
               onMouseEnter={(e) => {
                 if (windowWidth >= 768) {
@@ -100,7 +101,7 @@ export default function CoursesOverview() {
                   e.currentTarget.style.transition = 'transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out';
                   e.currentTarget.style.transform = 'translateY(0) scale(1)';
                   e.currentTarget.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.08)';
-                  e.currentTarget.style.border = 'none';
+                  e.currentTarget.style.border = '2px solid transparent';
                 } else {
                   e.currentTarget.style.transition = 'transform 0.2s ease-out';
                   e.currentTarget.style.transform = 'scale(1)';
