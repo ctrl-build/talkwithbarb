@@ -79,7 +79,7 @@ export default function CoursesCTA() {
           </h2>
 
           <Link
-            href="/contact"
+            href="/booking"
             className={`inline-flex items-center justify-center px-10 py-4 rounded-full font-medium transition-all duration-300 relative overflow-hidden ${
               windowWidth < 1200 ? 'w-full max-w-sm' : ''
             }`}

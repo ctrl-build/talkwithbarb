@@ -340,7 +340,7 @@ function ServicesCTAButton({ isMobile = false }: { isMobile?: boolean }) {
 
   return (
     <Link
-      href="/book"
+      href="/booking"
       className={`inline-flex items-center justify-center rounded-full text-white font-medium transition-all duration-300 ${
         isMobile ? 'w-full' : 'px-8 py-4'
       }`}

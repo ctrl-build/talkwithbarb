@@ -13,6 +13,16 @@ export default function Header() {
   const [logoAnimationComplete, setLogoAnimationComplete] = useState(false);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setLogoAnimationComplete(true);
+    }, 1600);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 80);
     };
@@ -20,10 +30,6 @@ export default function Header() {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
-
-    const timer = setTimeout(() => {
-      setLogoAnimationComplete(true);
-    }, 1400);
 
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -35,7 +41,6 @@ export default function Header() {
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      clearTimeout(timer);
       document.body.style.overflow = '';
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
@@ -243,8 +248,8 @@ export default function Header() {
                 style={{
                   animation: logoAnimationComplete
                     ? 'none'
-                    : `fadeInLetter 0.2s ease-out ${index * 0.08}s both`,
-                  opacity: logoAnimationComplete ? 1 : undefined,
+                    : `fadeInLetter 0.2s ease-out ${index * 0.08}s forwards`,
+                  opacity: logoAnimationComplete ? 1 : 0,
                 }}
               >
                 {letter === ' ' ? '\u00A0' : letter}

@@ -53,7 +53,7 @@ export default function Footer() {
     { href: '/journal', label: 'Derniers articles' },
     { href: '/journal?category=conseils', label: 'Conseils linguistiques' },
     { href: '/about', label: 'Méthode TalkWithBarb' },
-    { href: '/book', label: 'Réserver un cours' },
+    { href: '/booking', label: 'Réserver un cours' },
   ];
 
   const socialLinks = [
