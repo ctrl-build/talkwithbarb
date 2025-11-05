@@ -414,7 +414,7 @@ function CTAButton({
 
   return (
     <Link
-      href="/book"
+      href="/booking"
       className={`flex items-center justify-center px-6 py-3 rounded-full text-white font-medium text-base transition-all duration-300 ${
         !isHovered ? 'animate-breathe' : ''
       }`}
@@ -531,7 +531,7 @@ function MobileCTAButton({
 
   return (
     <Link
-      href="/book"
+      href="/booking"
       className="w-full rounded-full text-white font-medium transition-all duration-300 active:scale-[0.98] flex items-center justify-center"
       style={{
         fontFamily: 'var(--font-satoshi)',
